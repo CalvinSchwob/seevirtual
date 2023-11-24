@@ -33,21 +33,23 @@ body {
 .header-middle {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 0;
-    width: 100vw;
+    align-items: center;
+    margin-right: 0;
+}
+
+.second-image {
+    width: 10vw;
+    align-self: flex-end;
+    margin: 0;
+}
+
+.first-image, .third-image {
+    display: flex;
 }
 
 img {
     object-fit: contain;
-}
-
-.scroll-logo {
-    align-self: flex-end;
-    width: 10%;
-    height: auto;
-}
-
-.header-middle :last-child {
-    align-self: flex-end;
-    margin-bottom: 0;
+    width: 100%;
+    margin: auto;
+    flex-shrink: 1;
 }
