@@ -12,6 +12,8 @@ body {
     overflow-x: hidden;
 }
 
+/* Header CSS */
+
 .header {
     background-color: black;
     display: flex;
@@ -108,3 +110,5 @@ body::-webkit-scrollbar {
     }
 
 }
+
+/* Cards body CSS */
