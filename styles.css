@@ -68,7 +68,7 @@ body {
     position: absolute;
     width: 28%;
     right: 5%;
-    bottom: 0px;
+    bottom: -2.5px;
 }
 
 img {
@@ -187,4 +187,5 @@ body::-webkit-scrollbar {
     border: #c83636 solid 2px;
     width: 100vw;
     background-color: black;
+    box-sizing: border-box;
 }
