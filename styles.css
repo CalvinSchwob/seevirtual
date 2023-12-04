@@ -138,6 +138,7 @@ body::-webkit-scrollbar {
     width: auto;
     position: absolute;
     right: 0px;
+    z-index: 2;
 }
 
 .workflow-heading {
