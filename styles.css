@@ -150,22 +150,7 @@ body::-webkit-scrollbar {
     width: 100vw;
 }
 
-.service-card {
-    width: 30vw;
-    min-width: 300px;
-    border: solid black 2px;
-    border-radius: 20px;
-}
 
-.lower-workflow-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.service-card-2 {
-    grid-column: 1;
-}
 
 .hr {
     border: #c83636 solid 2px;
