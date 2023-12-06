@@ -158,3 +158,32 @@ body::-webkit-scrollbar {
     background-color: black;
     box-sizing: border-box;
 }
+
+
+/* Test-iframe */
+
+.example {
+    display: flex;
+    flex-direction: column;
+    background-color: #c83636;
+}
+
+.example-heading {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    width: 100vw;
+}
+
+.example-iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.example-iframe-container iframe {
+    width: 80vw;
+    height: 80vh;
+    border: 3px solid #000;
+}
