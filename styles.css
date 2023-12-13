@@ -126,7 +126,6 @@ body::-webkit-scrollbar {
 
 .upper-workflow-container {
     display: flex;
-    height: 33%;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -159,31 +158,36 @@ body::-webkit-scrollbar {
     box-sizing: border-box;
 }
 
-
-/* Test-iframe */
-
-.example {
-    display: flex;
-    flex-direction: column;
-    background-color: #c83636;
-}
-
-.example-heading {
-    background-color: black;
-    color: white;
-    font-size: 2rem;
-    width: 100vw;
-}
-
-.example-iframe-container {
-    display: flex;
-    justify-content: center;
+.workflow-list {
     align-items: center;
-    height: 100vh;
+    display: flex;
 }
 
-.example-iframe-container iframe {
-    width: 80vw;
-    height: 80vh;
-    border: 3px solid #000;
+.workflow-list ol {
+    list-style: none;
 }
+
+.lower-workflow-container {
+    display: flex;
+    width: 50vw;
+    height: 85vh;
+}
+
+.workflow-list ol li h2 {
+    color: white; 
+    font-size: 96px; 
+    font-family: Nimbus Sans; 
+    font-weight: 700; 
+    word-wrap: break-word;
+    margin: 1px;
+}
+
+.workflow-list ol li p{
+    color: white;
+    font-size: 32px;
+    font-family: Nimbus Sans;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin: 1px;
+}
+    
