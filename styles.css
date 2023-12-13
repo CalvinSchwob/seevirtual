@@ -170,7 +170,7 @@ body::-webkit-scrollbar {
 .lower-workflow-container {
     display: flex;
     width: 50vw;
-    height: 85vh;
+    height: fit-content;
 }
 
 .workflow-list ol li h2 {
@@ -190,4 +190,21 @@ body::-webkit-scrollbar {
     word-wrap: break-word;
     margin: 1px;
 }
+
+.example-container {
+    height: 100vh;
+    background-color: #434040;
+    display: flex;
+    align-items: center;
+}
     
+.example-container h2 {
+    font-size: 6rem;
+    width: 45%;
+}
+
+.example-container iframe {
+    width: 45%;
+    height: auto;
+    aspect-ratio: 2/1
+}
