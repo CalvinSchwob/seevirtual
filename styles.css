@@ -13,6 +13,10 @@ body {
     overflow-x: hidden;
 }
 
+.red-stripe {
+    color: #d83636;
+}
+
 /* Header CSS */
 
 .header {
@@ -161,6 +165,7 @@ body::-webkit-scrollbar {
 .workflow-list {
     align-items: center;
     display: flex;
+    height: 800px;
 }
 
 .workflow-list ol {
@@ -196,15 +201,19 @@ body::-webkit-scrollbar {
     background-color: #434040;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    color: white;
 }
     
 .example-container h2 {
-    font-size: 6rem;
+    font-size: 10rem;
     width: 45%;
 }
 
 .example-container iframe {
     width: 45%;
     height: auto;
-    aspect-ratio: 2/1
+    aspect-ratio: 550/550;
+    border-radius: 20px;
 }
+
