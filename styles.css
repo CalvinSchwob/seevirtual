@@ -140,7 +140,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Cards body CSS "UNSER WORKFLOW*/
 
-.workflow-container {
+/* .workflow-container {
     background-color: #c83636;
     height: 100vh;
     width: 100vw
@@ -172,7 +172,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 2rem;
     background-color: black;
     color: white;
-    position: relative;
+    /* position: relative;
     z-index: 2;
     width: 100vw;
 }
@@ -273,7 +273,7 @@ body::-webkit-scrollbar-thumb {
         justify-content: space-evenly;
         height: 100%;
     }
-}
+} */
 
 /* Example Container */
 
@@ -393,4 +393,50 @@ body::-webkit-scrollbar-thumb {
     .service-card-image {
         height: 45vh;
     }
+}
+
+/* Kontakt */
+
+#kontakt {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+#kontakt::before {
+    content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('images/Matterportkamera\ Entsättigt.webp');
+  opacity: 0.5;
+  background-size: cover;
+}
+
+.kontakt-text {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.kontakt-text h2 {
+    font-size: clamp(60px, 8vw, 70px);
+    width: 25vw;
+    position: relative;
+    left: 50px
+}
+
+.kontakt-text p {
+ font-size: clamp(25px, 4vw, 25px);
+ width: 25vw;
+ position: relative;
+ bottom: 200px;
+ left: 50px;
 }
