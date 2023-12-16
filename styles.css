@@ -408,14 +408,14 @@ body::-webkit-scrollbar-thumb {
 
 #kontakt::before {
     content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: url('images/Matterportkamera\ Entsättigt.webp');
-  opacity: 0.5;
-  background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('images/Matterportkamera\ Entsättigt.webp');
+    opacity: 0.5;
+    background-size: cover;
 }
 
 .kontakt-text {
@@ -424,19 +424,106 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: space-between;
     color: white;
+    min-width: 350px;
 }
 
 .kontakt-text h2 {
-    font-size: clamp(60px, 8vw, 70px);
+    font-size: clamp(2rem, 10vw, 100px);
     width: 25vw;
     position: relative;
-    left: 50px
+    margin-left: 50px;
+    /* left: 100px;
+    top: 0px; */
 }
 
 .kontakt-text p {
- font-size: clamp(25px, 4vw, 25px);
+ font-size: clamp(2rem, 6vw, 40px);
  width: 25vw;
  position: relative;
- bottom: 200px;
- left: 50px;
+ margin-left: 50px;
+ min-width: 300px;
+ /* bottom: 50px;
+ left: 100px; */
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 50vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.contact-card {
+    /* border: red solid 2px; */
+    color: white;
+    min-width: 200px;
+    min-height: 200px;
+    position: relative;
+    font-size: clamp(20px, 3vh, 50px);
+    margin-left: 300px;
+    width: 300px;
+    height: 250px;
+}
+
+.contact-card p {
+    margin: 0;
+}
+
+.contact-card a {
+    color: white;
+}
+
+.contact-card-icon {
+ width: 50px;
+ height: 50px;
+}
+
+.contact-card p:first-of-type {
+    color: #d83636;
+}
+
+@media (max-width: 1343px) {
+
+    #kontakt {
+
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .contact-cards {
+        margin: initial;
+        width: 100vw;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .contact-card {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kontakt-text {
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    .kontakt-text h2 {
+        margin: initial;
+        text-align: center;
+        width: 90%;
+        margin-top: 20px;;
+    }
+
+    .kontakt-text p {
+        margin: initial;
+        text-align: center;
+        width: 90%;
+    }
 }
