@@ -332,6 +332,8 @@ body::-webkit-scrollbar-thumb {
     font-size: clamp(4rem, 8vw, 5rem);
     text-align: center;
     margin-top: 0;
+    padding-top: 30px;
+    ;
     background-color: #D9D9D9;
     border-top: #d83636 solid 2px;
 }
@@ -369,6 +371,8 @@ body::-webkit-scrollbar-thumb {
 .service-card-text-container p {
     font-size: clamp(1.5rem, 2vw, 1.75rem);
     text-align: center;
+    max-width: 90vw;
+    margin: auto;
 }
 
 .service-card-image {
@@ -393,6 +397,7 @@ body::-webkit-scrollbar-thumb {
     .service-card-image {
         height: 45vh;
     }
+
 }
 
 /* Kontakt */
@@ -416,6 +421,7 @@ body::-webkit-scrollbar-thumb {
     background-image: url('images/Matterportkamera\ Entsättigt.webp');
     opacity: 0.5;
     background-size: cover;
+    background-position: center;
 }
 
 .kontakt-text {
@@ -437,12 +443,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .kontakt-text p {
- font-size: clamp(2rem, 6vw, 40px);
- width: 25vw;
- position: relative;
- margin-left: 50px;
- min-width: 300px;
- /* bottom: 50px;
+    font-size: clamp(2rem, 6vw, 40px);
+    width: 25vw;
+    position: relative;
+    margin-left: 50px;
+    min-width: 300px;
+    /* bottom: 50px;
  left: 100px; */
 }
 
@@ -478,8 +484,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact-card-icon {
- width: 50px;
- height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
 .contact-card p:first-of-type {
@@ -514,11 +520,13 @@ body::-webkit-scrollbar-thumb {
         flex-wrap: wrap;
         width: 100vw;
     }
+
     .kontakt-text h2 {
         margin: initial;
         text-align: center;
         width: 90%;
-        margin-top: 20px;;
+        margin-top: 20px;
+        ;
     }
 
     .kontakt-text p {
