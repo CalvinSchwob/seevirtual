@@ -290,6 +290,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     min-height: fit-content;
     min-height: 100vh;
+    justify-content: space-evenly;
 }
 
 .mission-heading {
@@ -355,6 +356,7 @@ body::-webkit-scrollbar-thumb {
     .mission-img {
         width: 95vw;
     }
+
 }
 
 @media (max-width: 750px) {
