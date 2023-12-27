@@ -286,49 +286,79 @@ body::-webkit-scrollbar-thumb {
 /* Mission */
 
 .mission {
-    height: 100vh;
-    min-height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    min-height: fit-content;
+    min-height: 100vh;
 }
 
 .mission-heading {
-    font-size: clamp(0.1em, 10vw, 3em);
-    font-weight: bold;
-    text-align: center;
+    font-size: clamp(1rem, 10vw, 3rem);
+    font-weight: 900;
+    margin-left: 20px;
 }
 
 .mission-middle {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.mission-text {
-    font-size: clamp(1rem, 2.5vw, 3rem);
+.mission-middle p {
     width: 45vw;
+    min-width: 300px;
+    font-size: clamp(1.25rem, 3vw, 2.5rem);
     font-weight: 700;
 }
 
-.mission-image {
-    aspect-ratio: initial;
-    width: 40vw;
+.mission-img {
+    aspect-ratio: 2000/1428;
+    width: 45vw;
+    min-width: 300px;
+    align-self: center;
+}
+
+.mission-img img {
+    object-fit: cover;
+    width: 100%;
 }
 
 .mission-button {
+    color: white;
     background-color: #d83636;
-    font-size: 2rem;
-    border-radius: 20px;
-    color: black;
     border: none;
-    width: 50vw;
-    align-self: center;
+    font-size: clamp(1rem, 3vw, 3rem);
+    border-radius: 20px;
+    padding: 5px;
 }
 
 .mission a {
-    align-self: center;
+    margin: auto;
     margin-bottom: 30px;
 }
 
+@media (max-width: 600px) {
 
 
+    .mission-heading {
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mission-middle p {
+        width: 95vw;
+        margin: 0;
+
+    }
+
+    .mission-img {
+        width: 95vw;
+    }
+}
+
+@media (max-width: 750px) {
+    .mission-button {
+        width: 80vw;
+    }
+}
