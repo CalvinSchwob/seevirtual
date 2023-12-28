@@ -367,32 +367,49 @@ body::-webkit-scrollbar-thumb {
 
 .example {
     display: flex;
+    flex-wrap: wrap;
     background-color: #434040;
     color: white;
     justify-content: space-evenly;
-    padding: 40px;
-    height: 100vh;
+    padding: 30px;
+    min-height: 100lvh;
 }
 
 .example-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 45vw;
 }
 
 .example-text h2 {
-    font-size: clamp(1rem, 4vw, 3.5rem);
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    width: clamp(300px, 50vw, 600px);
 }
 
 .example p {
-    font-size: clamp(1rem, 2vw, 4rem);
-    width: 30vw;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    width: clamp(320px, 50vw, 600px);
 }
 
 .example iframe {
-    height: calc(100vh - 70px);
+    width: clamp(320px, 50vw, 600px);
     aspect-ratio: 1;
     align-self: center;
     border-radius: 20px;
+    min-width: 300px;
+}
+
+@media (max-width: 1259px) {
+
+    .example h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .example p {
+        margin-top: 20px;
+        text-align: center;
+    }
+
 }
