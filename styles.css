@@ -151,7 +151,66 @@ body::-webkit-scrollbar-thumb {
 
 /* Kontakt */
 
+.contact {
+    background-image: url(images/Contact-bg.png);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background-blend-mode: darken;
+}
 
+.contact-text h2 {
+    font-size: var(--h2-responsive);
+    font-weight: bold;
+    color: white;
+}
+
+.contact-text p {
+    font-size: var(--p-responsive);
+    font-weight: bold;
+    color: white;
+}
+
+.contact-card {
+    display: flex;
+}
+
+.contact-card p {
+    font-size: var(--p-responsive);
+    margin: auto;
+    margin-left: 10px;
+    color: white;
+}
+
+.contact-card p a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-card img {
+    width: 75px;
+    
+}
+
+@media (min-width:1000px) {
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        grid-template-areas: "contact-heading contact-card-1"
+                            ". contact-card-2"
+                            "contact-text contact-card-2";
+        
+        .contact-heading {grid-area: contact-heading; }
+        .contact-text {grid-area: contact-text; }
+        .contact-card-1 {grid-area: contact-card-1; }
+        .contact-card-2 {grid-area: contact-card-2; }
+        .contact-card-3 {grid-area: contact-card-3; }
+    }
+
+}
 
 /* Mission */
 
