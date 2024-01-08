@@ -1,3 +1,23 @@
+@fontface {
+    font-family: sansation-light;
+    src: url("/fonts/sansation/Sansation_Light.ttf");
+}
+
+@fontface {
+    font-family: sansation-bold;
+    src: url("/fonts/sansation/Sansation_Bold.ttf");
+}
+
+@fontface {
+    font-family: vesperlibre-regular;
+    src: url("/fonts/vesperlibre/VerperLibre-Regular.ttf");
+}
+
+@fontface {
+    font-family: ubuntu-bold;
+    src: url("/fonts/ubuntu/Ubuntu-Bold.ttf");
+}
+
 * {
     /* border: red solid 2px; */
     scrollbar-color: #d83636 #d83636;
